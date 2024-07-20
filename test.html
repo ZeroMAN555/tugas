@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Kelompok 3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6f0ff;
+      }
+
+      header {
+        text-align: center;
+        background-color: #007bff;
+        padding: 20px;
+        color: white;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      h2 {
+        margin: 10px 0;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .content p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      .interactive-item {
+        margin: 20px 0;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .interactive-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .interactive-item h3 {
+        margin-top: 0;
+      }
+
+      .interactive-item p {
+        margin: 10px 0;
+      }
+
+      .interactive-item img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      .show-more {
+        display: none;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .show-more-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .show-more-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tugas Kelompok 3</h1>
+      <h2>tema: media interaktif</h2>
+      <h3>Jenis Jenis Media Interaktif</h3>
+    </header>
+    <div class="content">
+      <div class="interactive-item">
+        <h3>Website Interaktif</h3>
+        <p>
+          Website yang dirancang dengan elemen-elemen interaktif seperti tombol,
+          formulir, dan animasi. Pengguna dapat berinteraksi dengan konten,
+          mengirimkan informasi, atau menerima umpan balik secara real-time.
+        </p>
+        <img src="assets/web.png" alt="Website Interaktif" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Website interaktif biasanya dirancang untuk meningkatkan keterlibatan
+          pengguna dan memberikan pengalaman yang lebih dinamis.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Game Video</h3>
+        <p>
+          Game yang memungkinkan pemain untuk berpartisipasi aktif dalam cerita
+          atau aktivitas melalui kontroler, keyboard, atau perangkat lainnya.
+          Contohnya adalah game konsol, PC, dan game mobile.
+        </p>
+        <img src="assets/game.png" alt="Game Video" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Game video menawarkan berbagai genre dan pengalaman, mulai dari
+          petualangan hingga simulasi.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Aplikasi Mobile</h3>
+        <p>
+          Aplikasi yang diinstal pada perangkat mobile (smartphone atau tablet)
+          yang menawarkan berbagai fungsi, mulai dari permainan, edukasi, hingga
+          utilitas sehari-hari. Aplikasi ini sering memanfaatkan fitur perangkat
+          seperti layar sentuh dan sensor gerak.
+        </p>
+        <img src="assets/mobile.png" alt="Aplikasi Mobile" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Aplikasi mobile telah menjadi bagian penting dari kehidupan
+          sehari-hari, memudahkan berbagai aktivitas pengguna.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>E-Learning</h3>
+        <p>
+          Platform pembelajaran online yang menyediakan materi pelajaran
+          interaktif, seperti kuis, video, dan simulasi. Pengguna dapat belajar
+          secara mandiri dengan umpan balik langsung dari sistem.
+        </p>
+        <img src="assets/learn.png" alt="E-Learning" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          E-Learning memudahkan proses pembelajaran jarak jauh dengan
+          menggunakan teknologi digital.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Virtual Reality (VR)</h3>
+        <p>
+          Teknologi yang menciptakan lingkungan simulasi tiga dimensi yang dapat
+          dieksplorasi dan berinteraksi oleh pengguna menggunakan headset VR.
+          Contohnya adalah aplikasi VR untuk pelatihan, game, dan simulasi
+          medis.
+        </p>
+        <img src="assets/vr.png" alt="Virtual Reality" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Virtual Reality memberikan pengalaman imersif dengan lingkungan yang
+          sepenuhnya terkomputerisasi.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Augmented Reality (AR)</h3>
+        <p>
+          Teknologi yang menggabungkan objek virtual dengan dunia nyata melalui
+          perangkat seperti smartphone atau kacamata AR. Contohnya adalah
+          aplikasi AR yang menambahkan informasi atau objek digital ke
+          lingkungan sekitar pengguna.
+        </p>
+        <img src="assets/ar.png" alt="Augmented Reality" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Augmented Reality menambahkan lapisan digital pada dunia nyata untuk
+          meningkatkan interaksi pengguna.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Simulasi Interaktif</h3>
+        <p>
+          Program yang mensimulasikan situasi dunia nyata untuk tujuan pelatihan
+          atau hiburan. Contohnya adalah simulator penerbangan atau simulasi
+          medis.
+        </p>
+        <img src="assets/simu.png" alt="Simulasi Interaktif" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Simulasi interaktif memungkinkan pengguna untuk berlatih dan belajar
+          dalam lingkungan yang aman dan terkendali.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Multimedia Presentasi</h3>
+        <p>
+          Presentasi yang menggabungkan teks, gambar, video, dan audio dengan
+          elemen interaktif seperti hyperlink atau polling. Contohnya adalah
+          presentasi PowerPoint dengan elemen interaktif atau software
+          presentasi lainnya seperti Prezi.
+        </p>
+        <img src="assets/ppt.png" alt="Multimedia Presentasi" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Multimedia presentasi membuat informasi lebih menarik dan mudah
+          dipahami melalui berbagai media.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Chatbot dan Asisten Virtual</h3>
+        <p>
+          Program AI yang dapat berinteraksi dengan pengguna melalui percakapan
+          teks atau suara. Contohnya adalah asisten virtual seperti Siri, Google
+          Assistant, dan chatbot customer service di website.
+        </p>
+        <img src="assets/ai.png" alt="Chatbot dan Asisten Virtual" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Chatbot dan asisten virtual memudahkan pengguna untuk mendapatkan
+          informasi dan bantuan melalui interaksi otomatis.
+        </p>
+      </div>
+      <div class="interactive-item">
+        <h3>Kios Interaktif</h3>
+        <p>
+          Perangkat yang biasanya ditempatkan di tempat umum yang memungkinkan
+          pengguna untuk mengakses informasi atau layanan melalui layar sentuh.
+          Contohnya adalah kios informasi di museum atau mesin tiket di stasiun
+          kereta.
+        </p>
+        <img src="assets/toko.png" alt="Kios Interaktif" />
+        <button class="show-more-button" onclick="toggleContent(this)">
+          Show More
+        </button>
+        <p class="show-more">
+          Kios interaktif memberikan cara yang mudah bagi pengguna untuk
+          mengakses informasi dan layanan di tempat umum.
+        </p>
+      </div>
+    </div>
+    <script>
+      function toggleContent(button) {
+        const showMore = button.nextElementSibling;
+        if (
+          showMore.style.display === "none" ||
+          showMore.style.display === ""
+        ) {
+          showMore.style.display = "block";
+          button.textContent = "Show Less";
+        } else {
+          showMore.style.display = "none";
+          button.textContent = "Show More";
+        }
+      }
+    </script>
+  </body>
+</html>
